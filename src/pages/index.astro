@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -19,38 +18,10 @@ import Card from "../components/Card.astro";
       </ul>
     </section>
   </main>
-  <footer>
-    <a href="https://manasas.dev">© 2023 manasas</a>
-  </footer>
 </Layout>
 
 <style lang="scss">
-  body {
-    margin: 0;
-    background: #0a0d0a;
-    color: white;
-  }
-  a {
-    color: white;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-  }
   section {
     padding: 8px 8px;
-  }
-  main {
-    max-width: 800px;
-    min-height: calc(100vh - 29px);
-    margin: 0 auto;
-  }
-  footer {
-    background: #44617b;
-    text-align: center;
-    padding: 4px 8px;
-    a {
-      text-decoration: none;
-    }
   }
 </style>

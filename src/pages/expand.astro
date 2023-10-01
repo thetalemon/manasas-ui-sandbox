@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Return from "../components/Return.astro";
 ---
 
 <script>
@@ -92,21 +93,12 @@ import Layout from "../layouts/Layout.astro";
           </li>
         </ul>
       </section>
-      <section class="return">
-        <a href="/">モドル</a>
-      </section>
+      <Return />
     </section>
   </main>
-  <footer>
-    <a href="https://manasas.dev">© 2023 manasas</a>
-  </footer>
 </Layout>
 
 <style lang="scss">
-  body {
-    margin: 0;
-    background: #0a0d0a;
-  }
   h1 {
     color: white;
     writing-mode: vertical-rl;
@@ -115,13 +107,6 @@ import Layout from "../layouts/Layout.astro";
   }
   h2 {
     margin-bottom: 0.5rem;
-  }
-  a {
-    color: white;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
   }
   .fv {
     height: 50vh;
@@ -145,18 +130,6 @@ import Layout from "../layouts/Layout.astro";
 
     section {
       padding: 8px 0;
-    }
-  }
-  .return {
-    text-align: center;
-    margin: 40px 0;
-  }
-  footer {
-    background: #44617b;
-    text-align: center;
-    padding: 4px 8px;
-    a {
-      text-decoration: none;
     }
   }
 </style>
